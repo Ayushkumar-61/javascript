@@ -296,6 +296,56 @@ const real_another_array = another_array.flat(2)
 
 
 
+// *********************** Objects ******************//
+
+
+// singleton- when we use constructor method to declare an object it is known as singleton and when we use literals the singleton is not made.
+ // object.create- here we are using constructor method to declare an object and it is also known as singleton.
+
+ // object literals- it is a way of declaring an object.
+
+ const mySym = Symbol("key1")
+
+ const juser ={
+    name: "ayush",
+    "full name": "ayush kumar",
+    [mySym]: "mykey1",
+    age: 22,
+    location: "koderma",
+    email: "ayush@gmail.com",
+    IsLoggedIn: false,
+    lastLoginDays: ["monday", "tuesday"]
+
+ }
+ 
+//  console.log(juser.name);
+//  console.log(juser["name"]);
+//  console.log(juser["full name"]);
+//   console.log(juser[mySym]);
+//  console.log(typeof juser[mySym]);
+//  console.log(juser);
+
+juser.email = "akash@email.com"
+// console.log(juser);
+// Object.freeze(juser);
+juser.email = "ahhhash@email.com"
+// console.log(juser);
+
+// juser.greeting = function(){
+//     console.log("hello js users");
+// }
+
+// console.log(juser.greeting());
+
+// juser.greetingTwo = function(){
+//     console.log(`hello js users, ${this.name}`);
+// }
+//  console.log(juser.greetingTwo());
+
+
+
+
+
 
 
 
