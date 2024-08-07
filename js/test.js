@@ -343,6 +343,81 @@ juser.email = "ahhhash@email.com"
 //  console.log(juser.greetingTwo());
 
 
+// ************************** objects part2 ******************* //
+
+// const tinderuser = new Object()
+// tinderuser.email = "a@gmail.com",
+// tinderuser.name = "ayush",
+// tinderuser.fullname = {
+//    name1: "kumar",
+//    age: 22,
+// }
+
+// console.log(tinderuser.fullname);
+// console.log(typeof tinderuser);
+
+// 
+
+
+ const tinderuser = {}
+ tinderuser.id = "123abc"
+ tinderuser.name = "ayush"
+ tinderuser.IsLoggedIn = false
+
+// console.log(tinderuser.id);
+
+
+// const regularuser = {
+//    email: "k@gmail.com",
+//    fullname: {
+//       userfullname: {
+//          firstname: "ayush",
+//          lastname: "kumar"
+//       }
+//    }
+// }
+
+// console.log(regularuser.fullname.userfullname.firstname);
+
+
+const obj1 = {1: "a", 2: "b"}
+const obj2 =  {3: "a", 4: "b"}
+ const obj4 = {5: "a", 6: "b"}
+
+//  const obj3 = {obj1, obj2}
+//  const obj3 = Object.assign({}, obj1, obj2, obj4)
+   // const obj3 = {...obj1, ...obj2, ...obj4}
+// console.log(obj3);
+
+const users = [
+   {
+      id: 1,
+      email: "s@gmail.com"
+   },
+   {
+      id: 1,
+      email: "s@gmail.com"
+   },
+   {
+      id: 1,
+      email: "s@gmail.com"
+   }
+]
+
+// console.log(users[0].id);
+// console.log(tinderuser);
+
+// console.log(Object.keys(tinderuser));
+// console.log(Object.values(tinderuser));
+// console.log(Object.values(tinderuser).length);
+// console.log(Object.entries(tinderuser));
+
+// console.log(tinderuser.hasOwnProperty('IsLoggedI'));
+
+
+
+
+
 
 
 
