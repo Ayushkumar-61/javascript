@@ -415,6 +415,21 @@ const users = [
 // console.log(tinderuser.hasOwnProperty('IsLoggedI'));
 
 
+// *********************** objects-destructure and json api intro ****************//
+
+const course = {
+   coursename: "javascript",
+   price: "5000",
+   courseInstructor: "ayush"
+}
+ // (course.courseInstructor);
+
+ const {courseInstructor: instructor} = course // object de-structor //
+//  console.log(instructor)
+
+
+
+
 
 
 
