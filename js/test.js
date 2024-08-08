@@ -428,7 +428,59 @@ const course = {
 //  console.log(instructor)
 
 
+// ************************** functions ********************* //
 
+// function myname(){
+//    console.log("A")
+//    console.log("y")
+//    console.log("u")
+//    console.log("s")
+//    console.log("h")
+   
+// }
+
+// myname();
+
+
+// function addtwonumbers(number1, number2){
+//   console.log(number1 + number2);
+// }
+
+// function addtwonumbers(number1, number2){
+//    let result = number1 + number2
+//    return result
+//    console.log("ayush");
+//  }
+
+// function addtwonumbers(number1, number2){
+//    return number1 + number2
+//  }
+  
+// function loginusermessage(username){
+//     if(!username === undefined){
+//        console.log("please enter your username");
+//        return;
+     
+//     }
+//       return `${username} just logged in`
+// }
+
+function loginusermessage(username= "sam"){
+       if(!username){
+           console.log("please enter your username");
+           return;
+        
+        }
+          return `${username} just logged in`
+    }
+
+//  const result = addtwonumbers(3, 5);
+//  addtwonumbers(3, "5");
+//  addtwonumbers(3, null);
+
+// console.log("result:",result);
+
+console.log(loginusermessage("ayush"))
 
 
 
