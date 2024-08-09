@@ -513,6 +513,29 @@ function returnSecondValue(getArray){
 //   console.log(returnSecondValue([200, 400, 100, 600]))
 
 
+// ************************ global and blocked scope **************************** //
+
+// let a = 10
+// const b = 20
+// var c = 300
+
+//   const a = 200
+
+ let a = 100
+
+if(true){
+    let a = 10
+   const b = 20
+   //  c = 30
+   // console.log("INNER:", a)
+   function addme(){
+
+   }
+}
+
+//  console.log(a);
+// console.log(b);
+// console.log(c);
 
 
 
