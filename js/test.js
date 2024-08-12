@@ -389,20 +389,20 @@ const obj2 =  {3: "a", 4: "b"}
    // const obj3 = {...obj1, ...obj2, ...obj4}
 // console.log(obj3);
 
-const users = [
-   {
-      id: 1,
-      email: "s@gmail.com"
-   },
-   {
-      id: 1,
-      email: "s@gmail.com"
-   },
-   {
-      id: 1,
-      email: "s@gmail.com"
-   }
-]
+// const users = [
+//    {
+//       id: 1,
+//       email: "s@gmail.com"
+//    },
+//    {
+//       id: 1,
+//       email: "s@gmail.com"
+//    },
+//    {
+//       id: 1,
+//       email: "s@gmail.com"
+//    }
+// ]
 
 // console.log(users[0].id);
 // console.log(tinderuser);
@@ -417,14 +417,14 @@ const users = [
 
 // *********************** objects-destructure and json api intro ****************//
 
-const course = {
-   coursename: "javascript",
-   price: "5000",
-   courseInstructor: "ayush"
-}
- // (course.courseInstructor);
+// const course = {
+//    coursename: "javascript",
+//    price: "5000",
+//    courseInstructor: "ayush"
+// }
+//  // (course.courseInstructor);
 
- const {courseInstructor: instructor} = course // object de-structor //
+//  const {courseInstructor: instructor} = course // object de-structor //
 //  console.log(instructor)
 
 
@@ -465,14 +465,14 @@ const course = {
 //       return `${username} just logged in`
 // }
 
-function loginusermessage(username= "sam"){
-       if(!username){
-           console.log("please enter your username");
-           return;
+// function loginusermessage(username= "sam"){
+//        if(!username){
+//          //   console.log("please enter your username");
+//            return;
         
-        }
-          return `${username} just logged in`
-    }
+//         }
+//           return `${username} just logged in`
+//     }
 
 //  const result = addtwonumbers(3, 5);
 //  addtwonumbers(3, "5");
@@ -482,9 +482,9 @@ function loginusermessage(username= "sam"){
 
 // console.log(loginusermessage("ayush"))
 
-function calculatecartPrice(val1, val2, ...num1){
-     return num1;
-}
+// function calculatecartPrice(val1, val2, ...num1){
+//      return num1;
+// }
 // console.log(calculatecartPrice(200, 400, 500, 2000))
 
 
@@ -505,9 +505,9 @@ function calculatecartPrice(val1, val2, ...num1){
 
 // const myNewArray = [200, 400, 100, 600]
 
-function returnSecondValue(getArray){
-   return getArray[1]
-}
+// function returnSecondValue(getArray){
+//    return getArray[1]
+// }
 
 // console.log(returnSecondValue(myNewArray))
 //   console.log(returnSecondValue([200, 400, 100, 600]))
@@ -521,34 +521,34 @@ function returnSecondValue(getArray){
 
 //   const a = 200
 
- let a = 100
+//  let a = 100
 
-if(true){
-    let a = 10
-   const b = 20
-   //  c = 30
-   // console.log("INNER:", a)
-   function addme(){
+// if(true){
+//     let a = 10
+//    const b = 20
+//    //  c = 30
+//    // console.log("INNER:", a)
+//    function addme(){
 
-   }
-}
+//    }
+// }
 
 //  console.log(a);
 // console.log(b);
 // console.log(c);
 
 
-function one(){
-   const username = "ayush"
+// function one(){
+//    const username = "ayush"
 
-   function two(){
-      const website = "youtube"
-       console.log(username);
-   }
-   //console.log(website);
+//    function two(){
+//       const website = "youtube"
+      //  console.log(username);
+//    }
+//    //console.log(website);
     
-    //two()
-}
+//     //two()
+// }
 
  //one()
 
@@ -565,18 +565,71 @@ function one(){
 //console.log(username);
 
 
-console.log(addone(5));
-function addone(num){
-   return num + 1;
+// console.log(addone(5));
+// function addone(num){
+//    return num + 1;
+// }
+
+
+// console.log(addTwo(5));
+// const addTwo = function(num){
+//    return num + 2;
+// }
+
+
+// ******************** this and arrow function in javascript ******************** //
+
+
+const user  = {
+   username: "ayush",
+   price: 999,
+
+    welcomeMessage: function(){
+      console.log(`${this.username}, welcome to website`);
+      //   console.log(this);
+    }
 }
 
+//    console.log(user.welcomeMessage());
+//    user.username = "sam"
+//   console.log(user.welcomeMessage());
 
-console.log(addTwo(5));
-const addTwo = function(num){
-   return num + 2;
-}
+//   console.log(this);
 
 
+//  function start(){
+//    let username = "ayush"
+//    console.log(this.username);
+//  }
+
+//  start()
+
+
+// const start = function(){
+//    let username = "ayush"
+//    console.log(this.username)
+// }
+
+
+//  const start = () => {
+//     let username = "ayush"
+//     console.log(this);
+//  }
+//  start()
+
+
+// const addTwo = (num1, num2) => {
+//    return num1 + num2
+// }
+
+// const addTwo = (num1, num2) =>   num1 + num2;
+
+// const addTwo = (num1, num2) =>   (num1 + num2); // need not want to write return keyword //
+
+
+const addTwo = (num1, num2) =>   ({username: "ayush"})
+
+console.log(addTwo(3, 5));
 
 
 
