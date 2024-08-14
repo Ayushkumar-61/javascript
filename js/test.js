@@ -634,15 +634,56 @@
 
 // Immediately invoked function expressions (IIFE) //
 
-(function man(){      // IIFE named function //
-   console.log(`DB CONNECTED`);
-})();
+// (function man(){      // IIFE named function //
+//    console.log(`DB CONNECTED`);
+// })();
 
-((name) =>{   // IIFE no-named function
-   console.log(`DB CONNECTED TWO ${name}`);
-})("ayush") 
+// ((name) =>{   // IIFE no-named function
+//    console.log(`DB CONNECTED TWO ${name}`);
+// })("ayush") 
 
 
+// ******************************** control-flow in javascript ************************* //
+
+
+// if
+
+
+// const temperature = 41;
+
+// if (temperature > 41){
+//     console.log("you there");
+// }else {
+//    console.log("not");
+// }
+// console.log("you are not there");
+
+
+// const score = 200
+
+// if(score > 100){
+//    var power = "fly"
+//    console.log(`user power: ${power}`);
+// }
+// console.log(`user power: ${power}`);
+
+
+// ********************** short-hand condition check ******************* //
+
+const balance = 1000
+
+// if (balance > 500) console.log("test");     // implect scope //
+
+
+if (balance < 500){
+   console.log("less than 500");
+}else if (balance < 750){
+       console.log("less than 750");
+}else if(balance < 950){
+   console.log("less than 950");
+}else{
+   console.log("less than 1200");
+}
 
 
 
