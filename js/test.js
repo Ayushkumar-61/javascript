@@ -831,14 +831,133 @@ let val1;
 //      arr = arr + 1
 // }
 
-let score = 11
-do {
-     console.log(`score is ${score}`);   
-     score ++
-} while (score <=10);
+// let score = 11
+// do {
+//      console.log(`score is ${score}`);   
+//      score ++
+// } while (score <=10);
 
 
 
+// for of
+
+// ["", "", ""]
+// [{}, {}, {}]
+
+
+// const arr = [1, 2, 3, 4, 5]
+// for (const num of arr) {
+//       console.log(num);  
+// }
+
+
+// const greetings  = "hello world"
+// for (const greet of greetings){
+//      if(greet == " "){
+//         continue;
+//      }   
+//      console.log(`Each user is ${greet}`);
+// }
+
+
+// Maps
+
+
+// const map = new Map()
+// map.set('IN', "INDIA")
+// map.set('usa', "united states of america")
+// map.set('fri', "france")
+
+// // console.log(map);
+
+// for (const [key, value]  of map) {
+//         console.log(key, ':-', value);
+// }
+
+
+// const myobject = {
+//         game1: 'NFS',
+//         game2: 'spiderman'
+// }
+
+// for (const [key, value] of myobject) {
+//         console.log(key, ':-', value);
+// }
+
+
+// const myobject = {
+//    js: 'javascript',
+//    cpp: 'c++',
+//    rb: 'rubby',
+//    swift: 'swift by apple'
+// }
+
+// for (const key in myobject) {
+//         console.log(`${key} shortcut is for ${myobject[key]}`);
+//         }
+
+
+// const programming = ["js", "rb", "py", "java", "cpp"]
+
+// for (const key in programming) {
+//        console.log(programming[key]);
+// }
+
+
+// const map = new Map()
+//       map.set('IN', "INDIA")
+//       map.set('usa', "united states of america")
+//       map.set('fri', "france")
+//       map.set('IN', "INDIA")
+
+//      for (const key in map) {
+//          console.log(key);
+//     }
+
+
+const coding  = ["js", "rubby", "java", "python", "cpp"]
+
+// coding.forEach(function (item){
+//     console.log(item);
+// })
+
+
+// coding.forEach((item) => {
+//      console.log(item);
+// })
+
+
+// function printme(item){
+//         console.log(item);
+// }
+
+
+// coding.forEach(printme);
+
+
+// coding.forEach((item, index, arr) => {
+//        console.log(item, index, arr);
+// })
+
+
+// const mycoding = [
+//         {
+//                 languageName: "javascript",
+//                 languageFileName: "js"
+//         },
+//         {
+//                  languageName: "java",
+//                 languageFileName: "java"
+//         },
+//         {
+//                  languageName: "java",
+//                 languageFileName: "java"
+//         },
+// ]
+
+// mycoding.forEach((item) =>{
+//       console.log(item.languageName);
+// })
 
 
 
